@@ -350,7 +350,7 @@ main .sect05 {
 }
 main .sect05 .bg02 {
   width: 100%;
-  height: 120%;
+  height: 50%;
   position: absolute;
   top: 50%;
   transform: translateY(-5%);
