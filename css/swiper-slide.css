@@ -1,0 +1,110 @@
+/* .sect01 .swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+.sect01 .sect01-slide {
+  width: 960px;
+  height: 100vh;
+  margin-left: auto;
+}
+
+.sect01 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.sect01 .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.sect02 .swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* overflow: visible; */
+}
+.swiper-wrapper {
+  width: fit-content;
+}
+.sect02 .swiper-slide {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: calc((100vw - 244px) / 3);
+  /* flex: 1; */
+}
+.sect02 .swiper-button-next,
+.sect02 .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 15px);
+  left: auto;
+  color: #f7a685;
+}
+.sect02 .swiper-button-prev,
+.sect02 .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 15px);
+  right: auto;
+  color: #f7a685;
+}
+
+/* .sect03 .swiper-slide {
+  width: calc((100% - 230px) / 2) !important;
+} */
+.sect03 .swiper-slide {
+  display: flex;
+  /* width: calc((100% - 230px) / 2); */
+}
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: relative;
+  left: var(--swiper-scrollbar-sides-offset, 1%);
+  bottom: var(--swiper-scrollbar-bottom, -20px);
+  top: var(--swiper-scrollbar-top, auto);
+  z-index: 50;
+  height: var(--swiper-scrollbar-size, 6px);
+  width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+}
+.swiper-scrollbar {
+  background: #f7a5854f;
+}
+.swiper-scrollbar-drag {
+  background: #f7a685;
+}
+.sect04 .swiper {
+  /* margin: 100px auto; */
+  width: 100%;
+}
+.sect04 .swiper-wrapper {
+  width: fit-content;
+}
+.sect04 .swiper-slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.sect04 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .swiper-scrollbar {
+  background: #d6d6d6;
+} */
+
+/* .swiper-scrollbar {
+  border-radius: 10px;
+  height: 10px;
+  width: 70%;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f7a68550;
+} */
+
+.sect05 .sect05-slide {
+  overflow: hidden;
+  width: 100%;
+}
+.sect05 .swiper-wrapper {
+  margin: 0;
+}

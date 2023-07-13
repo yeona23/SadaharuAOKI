@@ -1,0 +1,511 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400&display=swap");
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+
+body {
+  position: relative;
+}
+.resp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  font-size: 55px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #90aeb2;
+}
+h5 {
+  font-weight: 100;
+  font-size: 25px;
+  font-family: "League Spartan", sans-serif;
+}
+#wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  height: 100px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  /* background-color: #ffffff; */
+  backdrop-filter: blur(5px);
+  /* border: 1px dashed #f47e2f; */
+  z-index: 1000;
+}
+header nav {
+  width: 36%;
+}
+header nav a::after {
+  content: "";
+  position: relative;
+  height: 2px;
+  background: #f47e2f;
+  display: block;
+  width: 0%;
+  z-index: -1;
+  transition: all 0.5s;
+  top: 90%;
+}
+header nav ul a:hover::after {
+  width: 100%;
+}
+header .search_text {
+  font-weight: 100;
+  font-size: 0.9em;
+  overflow: hidden;
+  width: 180px;
+  height: 22px;
+  position: relative;
+}
+
+header .search_text input {
+  border: 0;
+  border-bottom: 1px solid #2f4842;
+  border-radius: 1px;
+  position: absolute;
+  right: -200px;
+  background-color: transparent;
+  transition: all 1s;
+}
+header .search_text input.active {
+  right: 0;
+}
+
+header .search_text input:focus {
+  outline: none;
+}
+header .icon {
+  width: 3%;
+}
+/* SECTION01 */
+main .sect01 {
+  margin-bottom: 300px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+main .sect01 .title_box {
+  position: absolute;
+  transform: translateX(25%);
+
+  z-index: 10;
+}
+svg {
+  width: 800px;
+}
+svg text {
+  font-family: "League Spartan", sans-serif;
+  font-size: 6em;
+  font-weight: 300;
+  transform: translateY(80%);
+  stroke: #37514d;
+  stroke-width: 2px;
+  stroke-dasharray: 780px;
+  /* stroke-dashoffset: 0px; */
+  fill: transparent;
+  animation: stroke 4s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: 780px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+/* main .sect01 .sect01-slide {
+  margin-left: auto;
+  z-index: -1;
+} */
+main .sect01 img {
+  width: 100%;
+  height: 100vh;
+}
+/* SECTION02 */
+main .sect02 {
+  position: relative;
+}
+main .sect02 .bg01 {
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  top: 50%;
+  /* transform: translateY(-10%); */
+  background: #f7d0ad;
+  z-index: -1000000;
+}
+main .sect02 h1 {
+  background: url(../image/sect02_underline.svg) no-repeat bottom;
+}
+main .sect02 h2 {
+  color: #f7a685;
+}
+main .sect02 article > div {
+  padding: 0 55px;
+}
+main .sect02 .swiper-button-next,
+main .sect02 .swiper-button-prev {
+  visibility: hidden;
+}
+main .sect02-slide:hover .swiper-button-next,
+main .sect02-slide:hover .swiper-button-prev {
+  visibility: visible;
+}
+
+main .sect02 .signature {
+  margin-bottom: 90px;
+}
+main .sect02 .signature div h5 {
+  margin: 20px 0 10px 0;
+  /* display: block; */
+}
+main .sect02 .signature div img {
+  border: 1px solid #f7a685;
+}
+main .sect02 .signature p {
+  font-size: 20px;
+  font-family: "SCoreDream";
+  /* display: block; */
+}
+main .sect02 .items {
+  /* margin-top: 100px; */
+  background: #f7a685;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 25px;
+  /* text-align: center; */
+}
+main .sect02 .items > div {
+  width: calc(100% / 8);
+  padding: 0;
+  overflow: hidden;
+}
+main .sect02 .items > div:hover img {
+  scale: 1.2;
+}
+main .sect02 .items div img {
+  width: 100%;
+  transition: all 0.3s;
+}
+main .sect02 .items div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* SECTION03 */
+main .sect03 {
+  margin-top: 300px;
+  /* background: #fff; */
+}
+main .sect03 h1 {
+  background: url(../image/sect03_underline.svg) no-repeat bottom;
+}
+main .sect03 article {
+  margin-right: 40px;
+  width: calc((100vw - 600px) / 2);
+}
+main .sect03 article a > div {
+  width: 100%;
+  display: flex;
+}
+main .sect03 article > div div:first-child {
+  /* flex: 50%; */
+  width: 60%;
+}
+main .sect03 article img {
+  width: 100%;
+}
+main .sect03 article:first-child {
+  margin-left: 40px;
+}
+main .sect03 h5 {
+  margin-bottom: 15px;
+  font-family: "SCoreDream";
+  font-weight: 200;
+}
+
+main .sect03 article a > div:first-child {
+  margin-bottom: 30px;
+}
+main .sect03 article a > div div:nth-child(2) {
+  width: 370px;
+  text-align: center;
+}
+main .sect03 article a > div {
+  border-radius: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+main .sect03 article:nth-child(1) a > div:first-child,
+main .sect03 article:nth-child(2) a > div:nth-child(2),
+main .sect03 article:nth-child(3) a > div:first-child,
+main .sect03 article:nth-child(4) a > div:nth-child(2) {
+  border: 1px solid #f7a685;
+}
+
+main .sect03 article:nth-child(2) a > div:first-child,
+main .sect03 article:nth-child(1) a > div:nth-child(2),
+main .sect03 article:nth-child(4) a > div:first-child,
+main .sect03 article:nth-child(3) a > div:nth-child(2) {
+  border: 1px solid #86a5a8;
+}
+main .sect03 .deco {
+  height: 3%;
+  z-index: 10;
+  width: 0%;
+  position: absolute;
+  bottom: 10%;
+  background: #f47e2f90;
+  transition: all 1s;
+}
+main .sect03 a:hover .deco {
+  width: 100%;
+}
+/* SECTION04 */
+main .sect04 {
+  margin-top: 300px;
+  font-family: "SCoreDream";
+}
+main .sect04 h1 {
+  background: url(../image/sect04_underline.svg) no-repeat bottom;
+}
+main .sect04 h3 {
+  font-weight: 300;
+}
+main .sect04 > div {
+  width: 100%;
+  flex-wrap: wrap;
+}
+main .sect04 article {
+  width: calc(100% / 2);
+  height: 90vh;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .sect04 article:first-child {
+  background: #f7a685;
+}
+/* main .sect04 article:first-child div:first-child {
+  flex: 2;
+} */
+main .sect04 article:first-child div:nth-child(2) {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .sect04 article:first-child div:nth-child(2) h3 {
+  margin-bottom: 35px;
+}
+main .sect04 article:last-child {
+  background: #ffc797;
+}
+main .sect04 article:last-child div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1.5;
+}
+main .sect04 article:last-child div:last-child {
+  display: flex;
+  flex: 2;
+}
+main .concept {
+  position: relative;
+  border-top: 1px solid #eee6de;
+  border-bottom: 1px solid #eee6de;
+}
+main .concept video,
+main .concept img {
+  width: 100%;
+}
+/* SECTION05 */
+
+main .sect05 {
+  margin: 300px 0;
+  font-family: "SCoreDream";
+  position: relative;
+}
+main .sect05 .bg02 {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-5%);
+  background: #f7d0ad;
+  z-index: -1000000;
+}
+main .sect05 h1 {
+  background: url(../image/sect05_underline.svg) no-repeat bottom;
+}
+main .sect05 .news {
+  flex-direction: column;
+}
+main .sect05 .news > div:first-child {
+  justify-content: unset;
+}
+main .sect05 .num {
+  width: 45%;
+  font-size: 18em;
+  font-weight: 200;
+  font-family: "League Spartan", sans-serif;
+  color: #f47e2f;
+  text-align: center;
+}
+main .sect05 .news_card {
+  width: 120%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+main .sect05 .news_card .resp {
+  align-items: flex-start;
+  width: 100%;
+}
+main .sect05 article {
+  width: 315px;
+  position: relative;
+}
+main .sect05 article div:first-child {
+  background: #f7a685;
+  position: absolute;
+  left: 7%;
+  width: 25%;
+  height: 85px;
+  padding: 5%;
+  line-height: 130%;
+  font-size: 18px;
+  font-weight: 200;
+  color: #eee6de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sect05 article h4 {
+  margin: 20px 0 10px 0;
+  font-weight: 300;
+  font-size: 25px;
+}
+main .sect05 .icon_more a {
+  width: 135px;
+  height: 35px;
+  background: #f7a685;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee6de;
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+  margin: 20px 20px 0 auto;
+  /* margin-top: 20px;
+  margin-left: auto; */
+}
+
+/* SECTION06 */
+
+main .sect06 h1 {
+  background: url(../image/sect06_underline.svg) no-repeat bottom;
+}
+main .sect06 > div {
+  width: 100%;
+  flex-wrap: wrap;
+}
+main .sect06 > div div {
+  width: calc(100% / 4);
+  overflow: hidden;
+}
+main .sect06 > div div img {
+  width: 100%;
+  transition: all 0.3s;
+}
+main .sect06 > div div:hover img {
+  scale: 1.15;
+}
+/* FOOTER */
+
+footer {
+  background: #f47e2f;
+  color: #eee6de;
+  height: 100%;
+}
+footer a:hover {
+  color: #fff;
+}
+footer .nav_box {
+  width: 55%;
+  align-items: flex-start;
+}
+footer .nav_box p:first-child {
+  margin-bottom: 30px;
+}
+footer .nav_f {
+  justify-content: flex-start;
+}
+footer .nav_box li {
+  margin-bottom: 15px;
+}
+footer .nav_box img {
+  display: inline-block;
+  margin-right: 20px;
+}
+footer .nav_box div:nth-child(3) p {
+  display: inline-block;
+}
+footer > div:first-child {
+  padding: 85px 55px;
+  border-bottom: 1px solid #eee6de;
+  align-items: flex-start;
+}
+footer > div:last-child {
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+footer .mail_f {
+  width: 60%;
+  border: 1px solid #eee6de;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .nav_box .mail_f p,
+footer .nav_box .mail_f img {
+  margin: 0;
+}
+footer .icon_f {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .nav_box div:last-child {
+  align-self: center;
+}
+footer .nav_box div:last-child img {
+  margin: 0;
+}
+footer .nav_box > div:last-child img:first-child {
+  margin-bottom: 20px;
+}
