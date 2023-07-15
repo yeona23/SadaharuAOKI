@@ -227,22 +227,22 @@ main .sect03 .bg03 {
 main .sect03 h1 {
   background: url(../image/sect03_underline.svg) no-repeat bottom;
 }
-main .sect03 article {
+main .sect03 .sect03-slide article {
   margin-right: 40px;
   width: calc((100vw - 600px) / 2);
 }
-main .sect03 article a > div {
+main .sect03 .sect03-slide article a > div {
   width: 100%;
   display: flex;
 }
-main .sect03 article > div div:first-child {
+main .sect03 .sect03-slide article > div div:first-child {
   /* flex: 50%; */
   width: 60%;
 }
-main .sect03 article img {
+main .sect03 .sect03-slide article img {
   width: 100%;
 }
-main .sect03 article:first-child {
+main .sect03 .sect03-slide article:first-child {
   margin-left: 40px;
 }
 main .sect03 h5 {
@@ -251,33 +251,33 @@ main .sect03 h5 {
   font-weight: 200;
 }
 
-main .sect03 article a > div:first-child {
+main .sect03 .sect03-slide article a > div:first-child {
   margin-bottom: 30px;
 }
-main .sect03 article a > div div:nth-child(2) {
+main .sect03 .sect03-slide article a > div div:nth-child(2) {
   width: 370px;
   text-align: center;
 }
-main .sect03 article a > div {
+main .sect03 .sect03-slide article a > div {
   border-radius: 200px;
   overflow: hidden;
   position: relative;
 }
 
-main .sect03 article:nth-child(1) a > div:first-child,
-main .sect03 article:nth-child(2) a > div:nth-child(2),
-main .sect03 article:nth-child(3) a > div:first-child,
-main .sect03 article:nth-child(4) a > div:nth-child(2) {
+main .sect03 .sect03-slide article:nth-child(1) a > div:first-child,
+main .sect03 .sect03-slide article:nth-child(2) a > div:nth-child(2),
+main .sect03 .sect03-slide article:nth-child(3) a > div:first-child,
+main .sect03 .sect03-slide article:nth-child(4) a > div:nth-child(2) {
   border: 1px solid #f7a685;
 }
 
-main .sect03 article:nth-child(2) a > div:first-child,
-main .sect03 article:nth-child(1) a > div:nth-child(2),
-main .sect03 article:nth-child(4) a > div:first-child,
-main .sect03 article:nth-child(3) a > div:nth-child(2) {
+main .sect03 .sect03-slide article:nth-child(2) a > div:first-child,
+main .sect03 .sect03-slide article:nth-child(1) a > div:nth-child(2),
+main .sect03 .sect03-slide article:nth-child(4) a > div:first-child,
+main .sect03 .sect03-slide article:nth-child(3) a > div:nth-child(2) {
   border: 1px solid #86a5a8;
 }
-main .sect03 .deco {
+main .sect03 .sect03-slide .deco {
   height: 3%;
   z-index: 10;
   width: 0%;
@@ -286,7 +286,7 @@ main .sect03 .deco {
   background: #f47e2f90;
   transition: all 1s;
 }
-main .sect03 a:hover .deco {
+main .sect03 .sect03-slide a:hover .deco {
   width: 100%;
 }
 /* SECTION04 */
@@ -690,5 +690,44 @@ footer .nav_box > div:last-child img:first-child {
     width: 100%;
     background: #ffc797;
     z-index: -100;
+  }
+  main .sect03 .sect03-slide {
+    display: none;
+  }
+  main .sect03 .sect03-slide02 {
+    display: block;
+  }
+  main .sect03 .sect03-slide02 .swiper-wrapper {
+    width: 100%;
+  }
+  main .sect03 .sect03-slide02 .swiper-slide {
+    width: 70%;
+    background: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  main .sect03 .sect03-slide02 img {
+    width: 100%;
+  }
+  main .sect03 .sect03-slide02 h5 {
+    font-size: 13px;
+    margin: 20px 0 10px 0;
+  }
+  main .sect03 .sect03-slide02 p {
+    font-size: 10px;
+  }
+  main .sect03 .swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  main .sect03 .swiper-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    );
   }
 }

@@ -86,3 +86,19 @@ var swiper6 = new Swiper(".sect02-slide02", {
   // mousewheel: true,
   // loop: true,
 });
+var swiper7 = new Swiper(".sect03-slide02", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

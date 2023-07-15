@@ -50,7 +50,7 @@
 /* .sect03 .swiper-slide {
   width: calc((100% - 230px) / 2) !important;
 } */
-.sect03 .swiper-slide {
+.sect03 .sect03-slide .swiper-slide {
   display: flex;
   /* width: calc((100% - 230px) / 2); */
 }
