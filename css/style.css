@@ -730,4 +730,21 @@ footer .nav_box > div:last-child img:first-child {
       rgba(0, 0, 0, 0)
     );
   }
+  main .sect03 .sect03-slide02 .swiper-horizontal > .swiper-scrollbar,
+  main .sect03 .sect03-slide02 .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: relative;
+    left: var(--swiper-scrollbar-sides-offset, 50%);
+    transform: translateX(-50%);
+    bottom: var(--swiper-scrollbar-bottom, -30px);
+    top: var(--swiper-scrollbar-top, auto);
+    z-index: 50;
+    height: var(--swiper-scrollbar-size, 6px);
+    width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 15%));
+  }
+  main .sect03 .sect03-slide02 .swiper-scrollbar {
+    background: #f7a5854f;
+  }
+  main .sect03 .sect03-slide02 .swiper-scrollbar-drag {
+    background: #f7a685;
+  }
 }

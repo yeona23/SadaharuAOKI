@@ -98,7 +98,7 @@ var swiper7 = new Swiper(".sect03-slide02", {
     modifier: 1,
     slideShadows: true,
   },
-  pagination: {
-    el: ".swiper-pagination",
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });

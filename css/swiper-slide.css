@@ -54,8 +54,8 @@
   display: flex;
   /* width: calc((100% - 230px) / 2); */
 }
-.swiper-horizontal > .swiper-scrollbar,
-.swiper-scrollbar.swiper-scrollbar-horizontal {
+.sect03 .sect03-slide .swiper-horizontal > .swiper-scrollbar,
+.sect03 .sect03-slide .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: relative;
   left: var(--swiper-scrollbar-sides-offset, 1%);
   bottom: var(--swiper-scrollbar-bottom, -20px);
@@ -64,10 +64,10 @@
   height: var(--swiper-scrollbar-size, 6px);
   width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
 }
-.swiper-scrollbar {
+.sect03 .sect03-slide .swiper-scrollbar {
   background: #f7a5854f;
 }
-.swiper-scrollbar-drag {
+.sect03 .sect03-slide .swiper-scrollbar-drag {
   background: #f7a685;
 }
 .sect04 .swiper {
