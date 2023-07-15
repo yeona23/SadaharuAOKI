@@ -3,9 +3,9 @@
   width: 100%;
 } */
 .sect01 .sect01-slide {
-  width: 960px;
-  height: 100vh;
-  margin-left: auto;
+  /* width: 50vw; */
+  /* margin-left: auto; */
+  transform: translateX(44%);
 }
 
 .sect01 .swiper-slide {
@@ -15,7 +15,7 @@
 
 .sect01 .swiper-slide img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .sect02 .swiper {
@@ -27,7 +27,7 @@
 .swiper-wrapper {
   width: fit-content;
 }
-.sect02 .swiper-slide {
+.sect02 .sect02-slide .swiper-slide {
   text-align: center;
   justify-content: center;
   align-items: center;

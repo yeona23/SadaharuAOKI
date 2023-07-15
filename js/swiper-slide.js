@@ -1,18 +1,22 @@
 var swiper = new Swiper(".sect02-slide", {
-  slidesPerView: 3,
-  spaceBetween: 95,
+  slidesPerView: 1,
+  spaceBetween: 20,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   loop: true,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: true,
-  // },
-  // slidesOffsetBefore: 50,
-  // slidesOffsetAfter: 50,
-  // centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  breakpoints: {
+    689: {
+      slidesPerView: 3,
+      spaceBetween: 95,
+      autoplay: false,
+    },
+  },
 });
 
 var swiper2 = new Swiper(".sect03-slide", {
@@ -73,4 +77,12 @@ var swiper5 = new Swiper(".sect01-slide", {
   //   el: ".swiper-pagination",
   //   clickable: true,
   // },
+});
+var swiper6 = new Swiper(".sect02-slide02", {
+  direction: "horizontal",
+  slidesPerView: "2.3",
+  spaceBetween: 20,
+  freeMode: true,
+  // mousewheel: true,
+  // loop: true,
 });
