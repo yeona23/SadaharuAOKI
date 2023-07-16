@@ -48,8 +48,12 @@ var swiper4 = new Swiper(".sect05-slide", {
   direction: "horizontal",
   slidesPerView: "auto",
   freeMode: true,
-  mousewheel: true,
   // loop: true,
+  breakpoints: {
+    689: {
+      mousewheel: true,
+    },
+  },
 });
 
 $(".icon_search").click(function () {

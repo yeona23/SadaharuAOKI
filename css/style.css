@@ -5,6 +5,23 @@
 body {
   position: relative;
 }
+.notScroll {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  touch-action: none;
+}
+.shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #25252594;
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 1000000;
+}
 .resp {
   display: flex;
   align-items: center;
@@ -38,6 +55,9 @@ h5 {
   overflow: hidden;
 }
 
+.nav_360 {
+  display: none;
+}
 /* HEADER */
 header {
   height: 100px;
@@ -432,9 +452,6 @@ main .sect05 .icon_more a {
   /* margin-top: 20px;
   margin-left: auto; */
 }
-main .sect05 article:hover img {
-  box-shadow: -2px 2px 15px #f47e2f;
-}
 /* SECTION06 */
 
 main .sect06 h1 {
@@ -454,6 +471,9 @@ main .sect06 > div div img {
 }
 main .sect06 > div div:hover img {
   scale: 1.15;
+}
+main .sect06 .resp div:last-child {
+  display: none;
 }
 /* FOOTER */
 
@@ -531,7 +551,7 @@ footer .nav_box > div:last-child img:first-child {
   }
   h1 {
     font-size: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   h2 {
     font-size: 18px;
@@ -541,6 +561,43 @@ footer .nav_box > div:last-child img:first-child {
     font-size: 15px;
     margin-bottom: 0px;
   }
+  .nav_360 {
+    display: block;
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    right: -100%;
+    padding: 45px 20px 45px 45px;
+    z-index: 100000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #f47e2f;
+    color: #eee6de;
+    transition: all 0.3s;
+  }
+  .nav_360.active {
+    right: 0%;
+  }
+  .nav_360 ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_360 ul li {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  .nav_360 .icon_m {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav_360 .icon_m a {
+    margin-left: 10px;
+  }
+
+  /* HEADER */
   header {
     width: 100%;
     /* width: 360px; */
@@ -583,6 +640,10 @@ footer .nav_box > div:last-child img:first-child {
   header .hamburger span:nth-child(3) {
     bottom: 0;
   }
+  header .nav_1920 {
+    display: none;
+  }
+
   /* SECTION01 */
   main .e_box {
     height: 15vh;
@@ -647,7 +708,7 @@ footer .nav_box > div:last-child img:first-child {
     color: #f7a685;
   }
   main .sect02 .signature {
-    margin-bottom: 55px;
+    margin-bottom: 25px;
   }
   main .sect02 .items {
     display: none;
@@ -685,7 +746,7 @@ footer .nav_box > div:last-child img:first-child {
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-48%);
     height: 150%;
     width: 100%;
     background: #ffc797;
@@ -704,14 +765,21 @@ footer .nav_box > div:last-child img:first-child {
     width: 70%;
     background: #fff;
     text-align: center;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+  }
+  main .sect03 .sect03-slide02 .swiper-slide > div:nth-child(2) {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   main .sect03 .sect03-slide02 img {
     width: 100%;
   }
   main .sect03 .sect03-slide02 h5 {
     font-size: 13px;
-    margin: 20px 0 10px 0;
+    margin-bottom: 10px;
   }
   main .sect03 .sect03-slide02 p {
     font-size: 10px;
@@ -742,9 +810,151 @@ footer .nav_box > div:last-child img:first-child {
     width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 15%));
   }
   main .sect03 .sect03-slide02 .swiper-scrollbar {
-    background: #f7a5854f;
+    background: #f47e2f4f;
   }
   main .sect03 .sect03-slide02 .swiper-scrollbar-drag {
-    background: #f7a685;
+    background: #f47e2f;
+  }
+  /* SECTION04 */
+  main .sect04 h1 {
+    background: url(../image/sect04_underline\(m\).svg) no-repeat bottom;
+  }
+  main .sect04 .concept {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    border: 0;
+  }
+  main .sect04 .concept article {
+    width: inherit;
+    height: auto;
+  }
+  main .sect04 .concept article:first-child > div:nth-child(2) {
+    flex: unset;
+    height: 130px;
+  }
+  main .sect04 .concept article:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .sect04 h3 {
+    font-size: 13px;
+  }
+  main .sect04 article:first-child div:nth-child(2) h3 {
+    margin-bottom: 15px;
+  }
+  main .sect04 p {
+    font-size: 10px;
+  }
+  main .sect04 article:last-child div:nth-child(1) {
+    height: 160px;
+    flex: unset;
+  }
+  /* SECTION05 */
+  main .sect05 h1 {
+    background: url(../image/sect05_underline\(m\).svg) no-repeat bottom;
+  }
+  main .sect05 {
+    position: relative;
+  }
+  main .sect05 article h4 {
+    font-size: 15px;
+  }
+  main .sect05 article p {
+    font-size: 12px;
+  }
+  main .sect05 .num {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 125px;
+    font-weight: 300;
+    z-index: 10;
+    width: fit-content;
+  }
+  main .sect05 article {
+    width: 190px;
+    margin-right: 30px;
+  }
+  main .sect05 article img {
+    width: 100%;
+  }
+  main .sect05 .sect05-slide {
+    transform: translateX(30%);
+    width: 80%;
+  }
+  main .sect05 .news_card {
+    width: 100%;
+  }
+  main .sect05 article div:first-child {
+    height: 60px;
+  }
+  main .sect05 .icon_more a {
+    font-size: 8px;
+    font-weight: 200;
+    width: 65px;
+    height: 25px;
+  }
+  /* SECTION06 */
+  main .sect06 h1 {
+    background: url(../image/sect06_underline\(m\).svg) no-repeat bottom;
+  }
+  main .sect06 .resp div:last-child {
+    display: block;
+  }
+  main .sect06 > div div {
+    width: calc(100% / 3);
+    overflow: hidden;
+    border: 1px solid #fff;
+  }
+  /* FOOTER */
+  footer > div:first-child {
+    padding: 20px;
+  }
+  footer .resp > div:first-child {
+    width: 110px;
+  }
+  footer .resp > div:first-child img {
+    width: 100%;
+  }
+  footer .nav_box {
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+  }
+  footer .nav_box > div:nth-child(2) ul {
+    display: flex;
+  }
+  footer .nav_box > div:nth-child(2) ul li {
+    margin: 0 4px 9px 0;
+  }
+
+  footer .nav_box p:first-child {
+    margin-bottom: 9px;
+  }
+  footer .nav_box > div:nth-child(2) p,
+  footer .nav_box > div:nth-child(3) p {
+    margin-bottom: 4px;
+  }
+  footer .nav_box > div:nth-child(3) img {
+    width: 6px;
+    margin-right: 9px;
+  }
+  footer .nav_box > div:nth-child(3) ul li {
+    font-size: 5px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+
+  footer .mail_f,
+  footer .icon_f {
+    display: none;
+  }
+  footer > div:last-child {
+    padding: 7px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5px;
   }
 }
