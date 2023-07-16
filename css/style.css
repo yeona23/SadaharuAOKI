@@ -309,6 +309,9 @@ main .sect03 .sect03-slide .deco {
 main .sect03 .sect03-slide a:hover .deco {
   width: 100%;
 }
+main .sect03 .sect03-slide02 {
+  display: none;
+}
 /* SECTION04 */
 main .sect04 {
   margin-top: 300px;
