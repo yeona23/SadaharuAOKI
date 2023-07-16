@@ -624,6 +624,7 @@ footer .nav_box > div:last-child img:first-child {
     width: 20px;
     height: 15px;
     position: relative;
+    cursor: pointer;
   }
   header .hamburger span {
     height: 1px;
