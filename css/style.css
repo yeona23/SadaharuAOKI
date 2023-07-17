@@ -309,6 +309,9 @@ main .sect03 .sect03-slide .deco {
 main .sect03 .sect03-slide a:hover .deco {
   width: 100%;
 }
+main .sect03 .sect03-slide02 {
+  display: none;
+}
 /* SECTION04 */
 main .sect04 {
   margin-top: 300px;
@@ -621,6 +624,7 @@ footer .nav_box > div:last-child img:first-child {
     width: 20px;
     height: 15px;
     position: relative;
+    cursor: pointer;
   }
   header .hamburger span {
     height: 1px;
@@ -893,7 +897,7 @@ footer .nav_box > div:last-child img:first-child {
     font-size: 8px;
     font-weight: 200;
     width: 65px;
-    height: 25px;
+    height: 20px;
   }
   /* SECTION06 */
   main .sect06 h1 {
@@ -921,12 +925,14 @@ footer .nav_box > div:last-child img:first-child {
     display: flex;
     flex-direction: column;
     font-size: 9px;
+    width: auto;
   }
   footer .nav_box > div:nth-child(2) ul {
     display: flex;
   }
   footer .nav_box > div:nth-child(2) ul li {
     margin: 0 4px 9px 0;
+    font-size: 6px;
   }
 
   footer .nav_box p:first-child {
@@ -937,11 +943,11 @@ footer .nav_box > div:last-child img:first-child {
     margin-bottom: 4px;
   }
   footer .nav_box > div:nth-child(3) img {
-    width: 6px;
+    width: 4px;
     margin-right: 9px;
   }
   footer .nav_box > div:nth-child(3) ul li {
-    font-size: 5px;
+    font-size: 6px;
     display: flex;
     align-items: flex-start;
     margin-bottom: 0px;
