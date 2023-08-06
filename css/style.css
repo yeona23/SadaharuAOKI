@@ -167,13 +167,7 @@ main .sect02 {
   position: relative;
 }
 main .sect02 .bg01 {
-  width: 100%;
-  height: 70%;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  background: #f7a685;
-  z-index: -1000000;
+  display: none;
 }
 main .sect02 h1 {
   background: url(../image/sect02_underline.svg) no-repeat bottom;
@@ -181,9 +175,7 @@ main .sect02 h1 {
 main .sect02 h2 {
   color: #f7a685;
 }
-main .sect02 h2:nth-of-type(2) {
-  color: #fff;
-}
+
 main .sect02 article > div {
   padding: 0 55px;
 }
@@ -689,6 +681,9 @@ footer .nav_box > div:last-child img:first-child {
   main .sect02 h1 {
     background: url(../image/sect02_underline\(m\).svg) no-repeat bottom;
   }
+  main .sect02 h2:nth-of-type(2) {
+    color: #fff;
+  }
   main .sect02 article > div {
     padding: 0 20px;
   }
@@ -749,6 +744,15 @@ footer .nav_box > div:last-child img:first-child {
   main .sect02 .sect02-slide02 .swiper-slide p {
     text-align: center;
     font-size: 15px;
+  }
+  main .sect02 .bg01 {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: -3%;
+    left: 0%;
+    background: #f7a685;
+    z-index: -1000000;
   }
   /* SECTION03 */
   main .sect03 h1 {
