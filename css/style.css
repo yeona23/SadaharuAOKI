@@ -122,7 +122,7 @@ header .icon {
 }
 /* SECTION01 */
 main .sect01 {
-  margin-bottom: 300px;
+  margin-bottom: 450px;
   background-color: #fff;
   justify-content: space-between;
   position: relative;
@@ -168,11 +168,12 @@ main .sect02 {
 }
 main .sect02 .bg01 {
   width: 100%;
-  height: 80%;
-  position: fixed;
-  top: 50%;
+  height: 70%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
   /* transform: translateY(-10%); */
-  background: #f7d0ad;
+  background: #f7a685;
   z-index: -1000000;
 }
 main .sect02 h1 {
@@ -180,6 +181,9 @@ main .sect02 h1 {
 }
 main .sect02 h2 {
   color: #f7a685;
+}
+main .sect02 h2:nth-of-type(2) {
+  color: #fff;
 }
 main .sect02 article > div {
   padding: 0 55px;
@@ -238,7 +242,7 @@ main .sect02 .sect02-slide02 {
 }
 /* SECTION03 */
 main .sect03 {
-  margin-top: 300px;
+  margin-top: 450px;
   /* background: #fff; */
 }
 main .sect03 .bg03 {
@@ -406,6 +410,10 @@ main .sect05 .num {
   font-family: "League Spartan", sans-serif;
   color: #f47e2f;
   text-align: center;
+  line-height: 50%;
+}
+main .sect05 .num .years {
+  font-size: 100px;
 }
 main .sect05 .news_card {
   width: 120%;
@@ -675,6 +683,9 @@ footer .nav_box > div:last-child img:first-child {
     stroke-width: 1px;
   }
   /* SECTION02 */
+  main .sect02 .bg01 {
+    bottom: -3%;
+  }
   main .sect02 h1 {
     background: url(../image/sect02_underline\(m\).svg) no-repeat bottom;
   }
@@ -703,13 +714,13 @@ footer .nav_box > div:last-child img:first-child {
   .sect02 .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, -15px);
     left: auto;
-    color: #f7a685;
+    color: #f47e2f;
   }
   main .sect02 .swiper-button-prev,
   .sect02 .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, -15px);
     right: auto;
-    color: #f7a685;
+    color: #f47e2f;
   }
   main .sect02 .signature {
     margin-bottom: 25px;
@@ -835,7 +846,8 @@ footer .nav_box > div:last-child img:first-child {
   }
   main .sect04 .concept article:first-child > div:nth-child(2) {
     flex: unset;
-    height: 130px;
+    height: 170px;
+    font-weight: 200;
   }
   main .sect04 .concept article:nth-child(2) {
     display: flex;
@@ -944,7 +956,7 @@ footer .nav_box > div:last-child img:first-child {
   }
   footer .nav_box > div:nth-child(3) img {
     width: 4px;
-    margin-right: 5px;
+    margin-right: 9px;
   }
   footer .nav_box > div:nth-child(3) ul li {
     font-size: 6px;

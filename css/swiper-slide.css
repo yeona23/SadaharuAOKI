@@ -38,13 +38,13 @@
 .sect02 .swiper-rtl .swiper-button-prev {
   right: var(--swiper-navigation-sides-offset, 15px);
   left: auto;
-  color: #f7a685;
+  color: #f47e2f;
 }
 .sect02 .swiper-button-prev,
 .sect02 .swiper-rtl .swiper-button-next {
   left: var(--swiper-navigation-sides-offset, 15px);
   right: auto;
-  color: #f7a685;
+  color: #f47e2f;
 }
 
 /* .sect03 .swiper-slide {
