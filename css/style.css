@@ -172,7 +172,6 @@ main .sect02 .bg01 {
   position: absolute;
   bottom: 0%;
   left: 0%;
-  /* transform: translateY(-10%); */
   background: #f7a685;
   z-index: -1000000;
 }
@@ -219,6 +218,7 @@ main .sect02 .items {
   width: 100%;
   font-size: 25px;
   /* text-align: center; */
+  border: 1px solid #fff;
 }
 main .sect02 .items > div {
   width: calc(100% / 8);
