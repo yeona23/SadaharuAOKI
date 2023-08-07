@@ -310,7 +310,7 @@ main .sect03 .sect03-slide02 {
 }
 /* SECTION04 */
 main .sect04 {
-  margin-top: 300px;
+  margin-top: 450px;
   font-family: "SCoreDream";
 }
 main .sect04 h1 {
@@ -373,7 +373,7 @@ main .concept img {
 /* SECTION05 */
 
 main .sect05 {
-  margin: 300px 0;
+  margin: 450px 0;
   font-family: "SCoreDream";
   position: relative;
 }
@@ -718,7 +718,7 @@ footer .nav_box > div:last-child img:first-child {
     color: #f47e2f;
   }
   main .sect02 .signature {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
   main .sect02 .items {
     display: none;
@@ -753,6 +753,7 @@ footer .nav_box > div:last-child img:first-child {
     left: 0%;
     background: #f7a685;
     z-index: -1000000;
+    display: block;
   }
   /* SECTION03 */
   main .sect03 h1 {
