@@ -4,6 +4,7 @@
 
 body {
   position: relative;
+  background: #fff6ee;
 }
 .notScroll {
   overflow: hidden;
@@ -29,7 +30,7 @@ body {
 }
 h1 {
   font-family: "League Spartan", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 55px;
   text-transform: uppercase;
   text-align: center;
@@ -37,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 36px;
   font-family: "League Spartan", sans-serif;
