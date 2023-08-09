@@ -128,6 +128,9 @@ main .sect01 {
   justify-content: space-between;
   position: relative;
 }
+main .sect01 .sect01_bg {
+  display: none;
+}
 main .sect01 .title_box {
   position: absolute;
   top: 50%;
@@ -404,12 +407,13 @@ main .sect05 .num {
   color: #f47e2f;
   text-align: center;
   line-height: 50%;
+  display: none;
 }
 main .sect05 .num .years {
   font-size: 100px;
 }
 main .sect05 .news_card {
-  width: 120%;
+  width: auto;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -421,6 +425,10 @@ main .sect05 .news_card .resp {
 main .sect05 article {
   width: 315px;
   position: relative;
+  margin-right: 60px;
+}
+main .sect05 article:last-child {
+  margin: 0;
 }
 main .sect05 article div:first-child {
   background: #f7a685;
@@ -656,6 +664,17 @@ footer .nav_box > div:last-child img:first-child {
   main .sect01 {
     margin-top: 15vh;
     /* display: unset; */
+    position: relative;
+  }
+  main .sect01 .sect01_bg {
+    display: block;
+    z-index: -100000;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: -70px;
   }
   main .sect01 .sect01-slide img {
     width: 100%;
@@ -878,6 +897,7 @@ footer .nav_box > div:last-child img:first-child {
   }
   main .sect05 {
     position: relative;
+    margin: 270px 0;
   }
   main .sect05 article h4 {
     font-size: 15px;
@@ -902,8 +922,9 @@ footer .nav_box > div:last-child img:first-child {
     width: 100%;
   }
   main .sect05 .sect05-slide {
-    transform: translateX(30%);
-    width: 80%;
+    /* transform: translateX(30%); */
+    width: 100%;
+    padding: 0 20px;
   }
   main .sect05 .news_card {
     width: 100%;
@@ -912,10 +933,17 @@ footer .nav_box > div:last-child img:first-child {
     height: 60px;
   }
   main .sect05 .icon_more a {
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 200;
     width: 65px;
     height: 20px;
+  }
+  .sect05 .sect05-slide {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
   }
   /* SECTION06 */
   main .sect06 h1 {

@@ -104,6 +104,9 @@
 .sect05 .sect05-slide {
   overflow: hidden;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sect05 .swiper-wrapper {
   margin: 0;
